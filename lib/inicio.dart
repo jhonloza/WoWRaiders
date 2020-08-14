@@ -1,5 +1,7 @@
 import 'package:WoWRaiders/templates/cabecera.dart';
+import 'package:WoWRaiders/templates/mainmenu.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Inicio extends StatelessWidget {
   @override
@@ -20,6 +22,7 @@ class Inicio extends StatelessWidget {
             color: Colors.indigo[900],
             centrar: true,
           ),
+          drawer: MainMenu(),
           body: ListView(
             children: [
               Container(
@@ -32,6 +35,7 @@ class Inicio extends StatelessWidget {
                     Column(
                       children: [
                         //INICIO DE LA PAGINA PRINCIPAL
+                        new Text(''),
                         new Container(
                           child: Text(
                             '┼ ┬ ┼ ┴ ┼ ┬ ┼ ┴ ┼ ┬ ┼ ┴ ┼ ┬ ┼',
@@ -499,7 +503,7 @@ entrega situada en este universo''',
                         ),
                         new Text(''),
                         new Container(
-                          child: FlatButton(onPressed: null, child: Image(image: AssetImage('assets/images/pantalla/bprecompra.gif',), width: 250, ),),
+                          child: FlatButton(onPressed: _launchURL, child: Image(image: AssetImage('assets/images/pantalla/bprecompra.gif',), width: 250, ),),
                         ),
                         new Text(''),
                         new Container(
@@ -526,5 +530,14 @@ entrega situada en este universo''',
             ],
           ),
         ));
+  }
+}
+
+_launchURL() async {
+  const url = 'https://us.shop.battle.net/es-es/product/world-of-warcraft-shadowlands?utm_source=worldofwarcraft.com';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'No se puede abrir la direccion $url';
   }
 }
