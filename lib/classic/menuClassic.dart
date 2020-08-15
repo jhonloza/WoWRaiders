@@ -1,36 +1,35 @@
-import 'package:WoWRaiders/classic/inicioClassic.dart';
+import 'package:WoWRaiders/inicio.dart';
 import 'package:flutter/material.dart';
 
-class MainMenu extends StatelessWidget {
-  InicioClassic iclassic = new InicioClassic();
+class MenuClassic extends StatelessWidget {
+  Inicio home = new Inicio();
   @override
   Widget build(BuildContext context) {
-    //paginas a accesar
     return Drawer(
       child: ListView(
         children: [
           DrawerHeader(
             child: Text(
-              '\nINICIO/HOME',
+              '\nClassic',
               style: TextStyle(
                 fontFamily: 'warcraft',
                 fontSize: 40,
-                color: Colors.black,
+                color: Colors.yellowAccent[700],
                 shadows: [
                   Shadow(
-                    color: Colors.cyan[300],
+                    color: Colors.blue[900],
                     offset: Offset(2, 2),
                   ),
                   Shadow(
-                    color: Colors.cyan[300],
+                    color: Colors.blue[900],
                     offset: Offset(-2, 2),
                   ),
                   Shadow(
-                    color: Colors.cyan[300],
+                    color: Colors.blue[900],
                     offset: Offset(2, -2),
                   ),
                   Shadow(
-                    color: Colors.cyan[300],
+                    color: Colors.blue[900],
                     offset: Offset(-2, -2),
                   )
                 ],
@@ -38,21 +37,21 @@ class MainMenu extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             decoration: BoxDecoration(
-              color: Color(0xff171a1b),
+              color: Colors.blue[900],
               image: DecorationImage(
-                image: AssetImage('assets/images/mainmenu/mainicon.png'),
+                image: AssetImage('assets/images/mainmenu/classicicon.png'),
                 fit: BoxFit.fitWidth,
               ),
             ),
           ),
           new Container(
-            color: Color(0xff171a1b),
+            color: Colors.indigo[900],
             child: Column(
               children: [
                 new Text(''),
                 new FlatButton(
                   onPressed: (){
-                    Navigator.pop(context);
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => home));
                   },
                   child: Image(
                     image: AssetImage(
@@ -62,7 +61,7 @@ class MainMenu extends StatelessWidget {
                 new Text(''),
                 new FlatButton(
                   onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => iclassic));
+                    Navigator.pop(context);
                   },
                   child: Image(
                     image: AssetImage(

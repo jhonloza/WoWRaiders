@@ -54,6 +54,7 @@ flutter:
     - assets/images/pantalla/
     - assets/images/noticias/
     - assets/images/mainmenu/
+    - assets/images/paginasmain/
     - assets/images/mainmenu/selectores/
   #   - images/a_dot_ham.jpeg
 
