@@ -1,8 +1,11 @@
+import 'package:WoWRaiders/classic/clasespvp/iniciopvp.dart';
 import 'package:WoWRaiders/classic/menuClassic.dart';
 import 'package:WoWRaiders/templates/cabecera.dart';
 import 'package:flutter/material.dart';
 
 class InicioClassic extends StatelessWidget {
+  InicioPVP iPVP = new InicioPVP();
+  
   @override
   Widget build(BuildContext context) {
     List<Widget> acciones = [];
@@ -147,13 +150,17 @@ de juego realmente autentica.
                             children: [
                               new Stack(
                                 children: [
-                                  new Image(
-                                    image: AssetImage(
-                                      'assets/images/paginasmain/selpvp.png',
-                                    ),
-                                    width: 150,
+                                  new FlatButton(
+                                    onPressed: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                    },
+                                    child: Image(image: AssetImage('assets/images/paginasmain/selpvp.png',), width: 140,),
                                   ),
-                                  new Text(
+                                  new FlatButton(
+                                    onPressed: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                    },
+                                    child: Text(
                                     '''
 
 
@@ -185,23 +192,27 @@ de juego realmente autentica.
                                       ],
                                     ),
                                   ),
+                                  ),
                                 ],
                               ),
-                              new Text('\t\t\t\t'),
                               new Stack(
                                 children: [
-                                  new Image(
-                                    image: AssetImage(
-                                      'assets/images/paginasmain/selpve.png',
-                                    ),
-                                    width: 150,
+                                  new FlatButton(
+                                    onPressed: () {
+                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                    },
+                                    child: Image(image: AssetImage('assets/images/paginasmain/selpve.png',), width: 140,),
                                   ),
-                                  new Text(
+                                  new FlatButton(
+                                    onPressed: () {
+                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                    },
+                                    child: Text(
                                     '''
 
 
-\t\t\t\t\t\tGuias
-\t\t\t\t\t\tPVE
+\t\t\t\t\tGuias
+\t\t\t\t\tPVE
 ''',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
@@ -227,6 +238,7 @@ de juego realmente autentica.
                                         )
                                       ],
                                     ),
+                                  ),
                                   ),
                                 ],
                               ),
@@ -237,18 +249,22 @@ de juego realmente autentica.
                             children: [
                               new Stack(
                                 children: [
-                                  new Image(
-                                    image: AssetImage(
-                                      'assets/images/paginasmain/selprofesiones.png',
-                                    ),
-                                    width: 150,
+                                  new FlatButton(
+                                    onPressed: () {
+                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                    },
+                                    child: Image(image: AssetImage('assets/images/paginasmain/selprofesiones.png',), width: 140,),
                                   ),
-                                  new Text(
+                                  new FlatButton(
+                                    onPressed: () {
+                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                    },
+                                    child: Text(
                                     '''
 
 
-\t\t Guias
-\t\t Profesiones
+\t\tGuias
+\t\tProfesiones
 ''',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
@@ -274,24 +290,28 @@ de juego realmente autentica.
                                         )
                                       ],
                                     ),
+                                  ),
                                   ),
                                 ],
                               ),
-                              new Text('\t\t\t\t'),
                               new Stack(
                                 children: [
-                                  new Image(
-                                    image: AssetImage(
-                                      'assets/images/paginasmain/seladdons.png',
-                                    ),
-                                    width: 150,
+                                  new FlatButton(
+                                    onPressed: () {
+                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                    },
+                                    child: Image(image: AssetImage('assets/images/paginasmain/seladdons.png',), width: 140,),
                                   ),
-                                  new Text(
+                                  new FlatButton(
+                                    onPressed: () {
+                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                    },
+                                    child: Text(
                                     '''
 
 
-\t\t\t\t Guias de
-\t\t\t\t Addons
+\t\t\t\tGuias
+\t\t\t\tAddons
 ''',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
@@ -317,6 +337,7 @@ de juego realmente autentica.
                                         )
                                       ],
                                     ),
+                                  ),
                                   ),
                                 ],
                               ),
