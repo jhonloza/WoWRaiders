@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       home: AnimatedSplash(
         imagePath: 'assets/images/pantalla/intro.gif',
         home: inicio,
-        duration: 15000,
+        duration: 8000,
         type: AnimatedSplashType.StaticDuration,
       ),
     );
