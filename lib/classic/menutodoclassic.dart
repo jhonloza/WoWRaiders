@@ -52,8 +52,9 @@ class MenuTodoClassic extends StatelessWidget {
               children: [
                 new Text(''),
                 new FlatButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => home));
+                  onPressed: () {
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (context) => home));
                   },
                   child: Image(
                     image: AssetImage(
@@ -62,8 +63,9 @@ class MenuTodoClassic extends StatelessWidget {
                 ),
                 new Text(''),
                 new FlatButton(
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => iClassic));
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => iClassic));
                   },
                   child: Image(
                     image: AssetImage(

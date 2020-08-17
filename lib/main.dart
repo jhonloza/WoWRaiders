@@ -5,8 +5,9 @@ import 'package:animated_splash/animated_splash.dart';
 void main() {
   runApp(MyApp());
 }
-class MyApp extends StatelessWidget{
-  Inicio inicio = new  Inicio();
+
+class MyApp extends StatelessWidget {
+  Inicio inicio = new Inicio();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

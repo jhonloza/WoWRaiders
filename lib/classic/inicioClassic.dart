@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class InicioClassic extends StatelessWidget {
   InicioPVP iPVP = new InicioPVP();
-  
+
   @override
   Widget build(BuildContext context) {
     List<Widget> acciones = [];
@@ -152,46 +152,57 @@ de juego realmente autentica.
                                 children: [
                                   new FlatButton(
                                     onPressed: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpvp.png',), width: 140,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/paginasmain/selpvp.png',
+                                      ),
+                                      width: 140,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 \t\t\t\t\t\tGuias
 \t\t\t\t\t\tPVP
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 26,
-                                      color: Color(0xff0028ff),
-                                      shadows: [
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 26,
+                                        color: Color(0xff0028ff),
+                                        shadows: [
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -201,44 +212,49 @@ de juego realmente autentica.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpve.png',), width: 140,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/paginasmain/selpve.png',
+                                      ),
+                                      width: 140,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 \t\t\t\t\tGuias
 \t\t\t\t\tPVE
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 26,
-                                      color: Color(0xff0028ff),
-                                      shadows: [
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 26,
+                                        color: Color(0xff0028ff),
+                                        shadows: [
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -253,44 +269,49 @@ de juego realmente autentica.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selprofesiones.png',), width: 140,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/paginasmain/selprofesiones.png',
+                                      ),
+                                      width: 140,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 \t\tGuias
 \t\tProfesiones
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 26,
-                                      color: Color(0xff0028ff),
-                                      shadows: [
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 26,
+                                        color: Color(0xff0028ff),
+                                        shadows: [
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -300,44 +321,49 @@ de juego realmente autentica.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/seladdons.png',), width: 140,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/paginasmain/seladdons.png',
+                                      ),
+                                      width: 140,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 \t\t\t\tGuias
 \t\t\t\tAddons
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 26,
-                                      color: Color(0xff0028ff),
-                                      shadows: [
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Color(0xffFFD700),
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 26,
+                                        color: Color(0xff0028ff),
+                                        shadows: [
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Color(0xffFFD700),
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),

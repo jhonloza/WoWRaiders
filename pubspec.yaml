@@ -61,6 +61,10 @@ flutter:
     - assets/images/mainmenu/
     - assets/images/paginasmain/
     - assets/images/mainmenu/selectores/
+    - assets/images/mainmenu/clases/
+    - assets/images/clases/
+    - assets/images/razas/
+    - assets/images/classic/pvp/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

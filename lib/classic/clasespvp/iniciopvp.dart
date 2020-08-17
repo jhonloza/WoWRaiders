@@ -1,8 +1,10 @@
 import 'package:WoWRaiders/templates/cabecera.dart';
 import 'package:flutter/material.dart';
 import '../menutodoclassic.dart';
+import 'guerreropvp.dart';
 
-class InicioPVP extends StatelessWidget{
+class InicioPVP extends StatelessWidget {
+  GuerreroPvP gpvp = new GuerreroPvP();
   @override
   Widget build(BuildContext context) {
     List<Widget> acciones = [];
@@ -12,10 +14,29 @@ class InicioPVP extends StatelessWidget{
       home: Scaffold(
         appBar: Cabecera(
           title: Text(
-            'Guia PvP Guerrero dps',
+            'GuiaS PvP',
             style: TextStyle(
               fontFamily: 'warcraft',
               fontSize: 28,
+              color: Colors.black,
+              shadows: [
+                Shadow(
+                  color: Colors.white,
+                  offset: Offset(2, 2),
+                ),
+                Shadow(
+                  color: Colors.white,
+                  offset: Offset(-2, 2),
+                ),
+                Shadow(
+                  color: Colors.white,
+                  offset: Offset(2, -2),
+                ),
+                Shadow(
+                  color: Colors.white,
+                  offset: Offset(-2, -2),
+                )
+              ],
             ),
           ),
           color: Colors.blue[900],
@@ -79,7 +100,7 @@ class InicioPVP extends StatelessWidget{
                       new Text(''),
                       new Container(
                         child: Text(
-'''
+                          '''
 PvP en WoW Classic te permite luchar por tu
 faccion en Azeroth. Unirte a la pelea
 refuerza tu reputacion y te otorga
@@ -178,14 +199,19 @@ pierdelo atacando a los debiles e indefensos.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpvp.png',), width: 145,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/mainmenu/clases/selbrujo.png',
+                                      ),
+                                      width: 145,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 
@@ -195,31 +221,31 @@ pierdelo atacando a los debiles e indefensos.
 
 \t\t\t\t\t\tBrujo
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 22,
-                                      color: Colors.black,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 22,
+                                        color: Colors.black,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -229,14 +255,19 @@ pierdelo atacando a los debiles e indefensos.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpve.png',), width: 145,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/mainmenu/clases/selcazador.png',
+                                      ),
+                                      width: 145,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 
@@ -246,31 +277,31 @@ pierdelo atacando a los debiles e indefensos.
 
 \t\t\t\t\t\tCazador
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 22,
-                                      color: Colors.black,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 22,
+                                        color: Colors.black,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -285,14 +316,19 @@ pierdelo atacando a los debiles e indefensos.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpvp.png',), width: 145,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/mainmenu/clases/selchaman.png',
+                                      ),
+                                      width: 145,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 
@@ -302,31 +338,31 @@ pierdelo atacando a los debiles e indefensos.
 
 \t\t\t\t\t\tChaman
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 22,
-                                      color: Colors.black,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 22,
+                                        color: Colors.black,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -336,14 +372,19 @@ pierdelo atacando a los debiles e indefensos.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpve.png',), width: 145,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/mainmenu/clases/seldruida.png',
+                                      ),
+                                      width: 145,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 
@@ -353,31 +394,31 @@ pierdelo atacando a los debiles e indefensos.
 
 \t\t\t\t\t\tDruida
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 22,
-                                      color: Colors.black,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 22,
+                                        color: Colors.black,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -390,16 +431,27 @@ pierdelo atacando a los debiles e indefensos.
                                 children: [
                                   new FlatButton(
                                     onPressed: () {
-                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => gpvp));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpvp.png',), width: 145,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/mainmenu/clases/selguerrero.png',
+                                      ),
+                                      width: 145,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
-                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => gpvp));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 
@@ -409,31 +461,31 @@ pierdelo atacando a los debiles e indefensos.
 
 \t\t\t\t\t\tGuerrero
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 22,
-                                      color: Colors.black,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 22,
+                                        color: Colors.black,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -443,14 +495,19 @@ pierdelo atacando a los debiles e indefensos.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpve.png',), width: 145,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/mainmenu/clases/selmago.png',
+                                      ),
+                                      width: 145,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 
@@ -460,31 +517,31 @@ pierdelo atacando a los debiles e indefensos.
 
 \t\t\t\t\t\tMago
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 22,
-                                      color: Colors.black,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 22,
+                                        color: Colors.black,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -499,14 +556,19 @@ pierdelo atacando a los debiles e indefensos.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpvp.png',), width: 145,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/mainmenu/clases/selpaladin.png',
+                                      ),
+                                      width: 145,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 
@@ -516,31 +578,31 @@ pierdelo atacando a los debiles e indefensos.
 
 \t\t\t\t\t\tPaladin
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 22,
-                                      color: Colors.black,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 22,
+                                        color: Colors.black,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -550,14 +612,19 @@ pierdelo atacando a los debiles e indefensos.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpve.png',), width: 145,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/mainmenu/clases/selpicaro.png',
+                                      ),
+                                      width: 145,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 
@@ -567,31 +634,31 @@ pierdelo atacando a los debiles e indefensos.
 
 \t\t\t\t\t\tPicaro
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 22,
-                                      color: Colors.black,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 22,
+                                        color: Colors.black,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
@@ -606,14 +673,19 @@ pierdelo atacando a los debiles e indefensos.
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
-                                    child: Image(image: AssetImage('assets/images/paginasmain/selpvp.png',), width: 145,),
+                                    child: Image(
+                                      image: AssetImage(
+                                        'assets/images/mainmenu/clases/selsacerdote.png',
+                                      ),
+                                      width: 145,
+                                    ),
                                   ),
                                   new FlatButton(
                                     onPressed: () {
                                       //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
                                     },
                                     child: Text(
-                                    '''
+                                      '''
 
 
 
@@ -623,40 +695,36 @@ pierdelo atacando a los debiles e indefensos.
 
 \t\t\t\t\t\tSacerdote
 ''',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 22,
-                                      color: Colors.black,
-                                      shadows: [
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, 2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(2, -2),
-                                        ),
-                                        Shadow(
-                                          color: Colors.white,
-                                          offset: Offset(-2, -2),
-                                        )
-                                      ],
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 22,
+                                        color: Colors.black,
+                                        shadows: [
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, 2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(2, -2),
+                                          ),
+                                          Shadow(
+                                            color: Colors.white,
+                                            offset: Offset(-2, -2),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
                                   ),
                                 ],
                               ),
                             ],
                           ),
-
-
-
-                          
                         ],
                       ),
                       new Text(''),
@@ -685,5 +753,4 @@ pierdelo atacando a los debiles e indefensos.
       ),
     );
   }
-
 }
