@@ -1,3 +1,4 @@
+import 'package:WoWRaiders/classic/clasespvp/brujopvp.dart';
 import 'package:WoWRaiders/templates/cabecera.dart';
 import 'package:flutter/material.dart';
 import '../menutodoclassic.dart';
@@ -5,6 +6,7 @@ import 'guerreropvp.dart';
 
 class InicioPVP extends StatelessWidget {
   GuerreroPvP gpvp = new GuerreroPvP();
+  BrujoPvP bpvp = new BrujoPvP();
   @override
   Widget build(BuildContext context) {
     List<Widget> acciones = [];
@@ -197,7 +199,7 @@ pierdelo atacando a los debiles e indefensos.
                                 children: [
                                   new FlatButton(
                                     onPressed: () {
-                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => bpvp));
                                     },
                                     child: Image(
                                       image: AssetImage(
@@ -208,7 +210,7 @@ pierdelo atacando a los debiles e indefensos.
                                   ),
                                   new FlatButton(
                                     onPressed: () {
-                                      //Navigator.push(context, MaterialPageRoute(builder: (context) => iPVP));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => bpvp));
                                     },
                                     child: Text(
                                       '''

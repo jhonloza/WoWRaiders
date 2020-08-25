@@ -8,11 +8,11 @@ class GuerreroPvP extends StatelessWidget {
     List<Widget> acciones = [];
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'home',
+      title: 'guerreropvp',
       home: Scaffold(
         appBar: Cabecera(
           title: Text(
-            'Guia PvP Guerrero dps',
+            'Guia PvP Guerrero',
             style: TextStyle(
               fontFamily: 'warcraft',
               fontSize: 28,
