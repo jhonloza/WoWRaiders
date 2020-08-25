@@ -434,6 +434,142 @@ class GuerreroPvP extends StatelessWidget {
                       ),
                       new Text(''),
                       new Container(
+                        child: RichText(
+                          textAlign: TextAlign.center,
+                          text: TextSpan(
+                            style: TextStyle(
+                              fontFamily: 'warcraft',
+                              fontSize: 17,
+                              color: Colors.black,
+                            ),
+                            children: <TextSpan>[
+                              /////en Negrita
+                              TextSpan(
+                                text: '''
+"Actitudes del guerrero" 
+
+''',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              /////en normal
+                              TextSpan(
+                                text: '''
+Los guerreros intercambian entre tres actitudes
+que tienen diferentes ventajas/desventajas, 
+asi como habilidades especificas de la actitud: 
+''',
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      new Container(
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_offensivestance.jpg'),
+                              width: 100,
+                            ),
+                            new Column(
+                              children: [
+                                new Text(
+                                  'Actitud de combate',
+                                  style: TextStyle(
+                                      fontFamily: 'warcraft',
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                new Text(
+                                  '''
+"Una actitud de combate equilibrada",
+es una Actitud de combate neutral
+que no viene con  ninguna ventaja
+o desventaja importante. ''',
+                                  style: TextStyle(
+                                    fontFamily: 'warcraft',
+                                    fontSize: 16,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Container(
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_defensivestance.jpg'),
+                              width: 100,
+                            ),
+                            new Column(
+                              children: [
+                                new Text(
+                                  'Actitud defensiva',
+                                  style: TextStyle(
+                                      fontFamily: 'warcraft',
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                new Text(
+                                  '''
+Una actitud de combate defensiva. 
+Reduce el dano recibido un 10% y el     
+dano infligido un 10%. Aumenta 
+la amenaza generada.''',
+                                  style: TextStyle(
+                                    fontFamily: 'warcraft',
+                                    fontSize: 16,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Container(
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_racial_avatar.jpg'),
+                              width: 100,
+                            ),
+                            new Column(
+                              children: [
+                                new Text(
+                                  'Actitud Rabiosa',
+                                  style: TextStyle(
+                                      fontFamily: 'warcraft',
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                new Text(
+                                  '''
+Una actitud agresiva. Aumenta la
+probabilidad de golpe critico un 3% y 
+todo el dano recibido aumenta un 10%''',
+                                  style: TextStyle(
+                                    fontFamily: 'warcraft',
+                                    fontSize: 16,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Container(
                         child: Text(
                           '■ │ ─ │ ─ │ ─ │ ─ │ ─ │ ─ │ ■',
                           style: TextStyle(
@@ -713,142 +849,6 @@ herir a los jugadores enemigos.
                         ),
                       ),
                       new Text(''),
-                      new Container(
-                        child: RichText(
-                          textAlign: TextAlign.center,
-                          text: TextSpan(
-                            style: TextStyle(
-                              fontFamily: 'warcraft',
-                              fontSize: 17,
-                              color: Colors.black,
-                            ),
-                            children: <TextSpan>[
-                              /////en Negrita
-                              TextSpan(
-                                text: '''
-"Actitudes del guerrero" 
-
-''',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              /////en normal
-                              TextSpan(
-                                text: '''
-Los guerreros intercambian entre tres actitudes
-que tienen diferentes ventajas/desventajas, 
-asi como habilidades especificas de la actitud: 
-''',
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      new Container(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            new Image(
-                              image: NetworkImage(
-                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_offensivestance.jpg'),
-                              width: 100,
-                            ),
-                            new Column(
-                              children: [
-                                new Text(
-                                  'Actitud de combate',
-                                  style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                new Text(
-                                  '''
-"Una actitud de combate equilibrada",
-es una Actitud de combate neutral
-que no viene con  ninguna ventaja
-o desventaja importante. ''',
-                                  style: TextStyle(
-                                    fontFamily: 'warcraft',
-                                    fontSize: 16,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                      new Container(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            new Image(
-                              image: NetworkImage(
-                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_defensivestance.jpg'),
-                              width: 100,
-                            ),
-                            new Column(
-                              children: [
-                                new Text(
-                                  'Actitud defensiva',
-                                  style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                new Text(
-                                  '''
-Una actitud de combate defensiva. 
-Reduce el dano recibido un 10% y el     
-dano infligido un 10%. Aumenta 
-la amenaza generada.''',
-                                  style: TextStyle(
-                                    fontFamily: 'warcraft',
-                                    fontSize: 16,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                      new Container(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            new Image(
-                              image: NetworkImage(
-                                  'https://wow.zamimg.com/images/wow/icons/large/ability_racial_avatar.jpg'),
-                              width: 100,
-                            ),
-                            new Column(
-                              children: [
-                                new Text(
-                                  'Actitud Rabiosa',
-                                  style: TextStyle(
-                                      fontFamily: 'warcraft',
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                new Text(
-                                  '''
-Una actitud agresiva. Aumenta la
-probabilidad de golpe critico un 3% y 
-todo el dano recibido aumenta un 10%''',
-                                  style: TextStyle(
-                                    fontFamily: 'warcraft',
-                                    fontSize: 16,
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
                       ///////////Habilidades ofensivas
                       new Container(
                         child: Text(
@@ -1508,7 +1508,1466 @@ funcion del dano de tu arma.''',
                       ),
                       new Text(''),
                       //Fin de habilidades ofensivas
-
+                      //Inicio habilidades Defensivas
+                      new Container(
+                        child: Text(
+                          'Habilidades Defensivas',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 24,
+                            color: Colors.black,
+                            shadows: [
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, -2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, -2),
+                              )
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      //Habilidades Defensivas
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_defend.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Bloquear con escudo: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Aumenta drasticamente la posibilidad
+de bloqueo durante un corto periodo de tiempo, tambien te
+hace inmune a  golpes aplastantes mientras esta activo.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_disarm.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Desarmar: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Desarma a tu objetivo, en PVP el jugador 
+tendra su arma cuerpo a cuerpo removida mientras dure, en 
+PVE el objetivo pierde poder de ataque.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_warcry.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Grito desmoralizador: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Un  grito  que  reduce  el  poder  de  
+ataque  de  los  enemigos  cercanos.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/spell_nature_thunderclap.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Atronar: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Inflige dano a hasta 4 enemigos cercanos, estos
+enemigos tambien veran su velocidad de ataque ralentizada
+por un corto periodo de tiempo.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      //Fin de Habilidades defensivas
+                      //InicioHabilidades de utilidad
+                      new Container(
+                        child: Text(
+                          'Habilidades de utilidad',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 24,
+                            color: Colors.black,
+                            shadows: [
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, -2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, -2),
+                              )
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      //habilidades utiles
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_battleshout.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Grito de batalla: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Un grito que aumenta el poder de ataque
+de los miembros del grupo cercano.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_sunder.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Hender armadura: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Reduce  la  acumulacion  de  armadura  
+del objetivo hasta 5 veces; esta habilidad causa una 
+gran cantidad de amenaza.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_shieldbash.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Azote de escudo: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Interrumpe  el  lanzamiento  de hechizos 
+del objetivo, bloqueandolo de la misma escuela de magia 
+durante 6 segundos. Requiere un escudo para usar.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/inv_gauntlets_04.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Zurrar: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Interrumpe   el   lanzamiento   de   hechizos   del 
+objetivo,  bloqueandolo  de  la  misma  escuela  de  magia 
+durante  4  segundos.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_charge.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Cargar: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Carga contra un objetivo enemigo y genera rabia,
+no se puede usar en combate.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_rogue_sprint.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Interceptar: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Las cargas a un objetivo enemigo, los costos 
+de rabia, se pueden usar en combate.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/spell_nature_reincarnation.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Provocar: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ''' Obliga al objetivo enemigo a atacarte, tambien
+hace que te conviertas en el mas alto en la tabla de 
+amenazas del objetivo.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_punishingblow.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Falsa arremetida: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Obliga al objetivo  enemigo a atacarte 
+durante un breve periodo.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_bullrush.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Grito desafiante: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Obliga a todos  los  enemigos cercanos a 
+atacarte durante un breve periodo.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_golemthunderclap.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Grito intimidador: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Teme  a  tu  objetivo  en el lugar,  otros
+enemigos  cercanos  huyen  asustados.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/spell_nature_ancestralguardian.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Ira rabiosa: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ''' Hace que el Guerrero se vuelva inmune a los 
+efectos de Miedo e Incapacidad durante un breve periodo 
+de tiempo; tambien genera ira extra al recibir dano.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathscream.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Aullido perforador: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''En el tercer nivel del arbol de Furia,
+esta habilidad ralentiza a los enemigos cercanos.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_thunderbolt.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Arremetida de conmoción	: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''En el quinto nivel del arbol de
+"Proteccion", esta habilidad aturde a un objetivo enemigo 
+durante 5 segundos.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      //Fin de habilidades  de utilidad
+                      //Inicio de Cooldowns de habilidad
+                      new Container(
+                        child: Text(
+                          'Cooldowns del Guerrero',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 24,
+                            color: Colors.black,
+                            shadows: [
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, -2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, -2),
+                              )
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      new Text(''),
+                      //Cooldowns
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_challange.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Represalias: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Te permite atacar a un enemigo despues de ser
+atacado por el, comparte un tiempo de reutilizacion largo
+con "Muro de escudo" y "Temeridad".''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_shieldwall.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Muro de escudo: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ''' Reduce  drasticamente  el  dano  recibido, 
+requiere un escudo para usar, comparte un tiempo de 
+reutilizacion prolongado con Represalias y Temeridad.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_criticalstrike.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Temeridad: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Aumenta  drasticamente  tus posibilidades de 
+asestar un golpe critico y te vuelve inmune al miedo 
+mientras dure; tambien recibes un 20% mas de dano. 
+Comparte un tiempo de reutilizacion prolongado con 
+"Represalias" y "Muro de escudo".''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathpact.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Deseo de muerte: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Desde el  quinto  nivel  en  el  arbol  de
+talentos de Furia, esta habilidad aumenta el dano que 
+infliges y te vuelve inmune al miedo durante 30 segundos.
+Deseo de muerte es ampliamente considerado el tiempo de 
+reutilizacion de dano mas poderoso en Classic.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_rogue_slicedice.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Golpes de barrido: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Desde el quinto nivel en el arbol de  
+talentos de Armas, esta habilidad hace que tus proximos
+ataques golpeen a un enemigo adicional.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      //Fin de Cooldowns
+                      //Fin de DPS Guerrero
                       new Container(
                         child: Text(
                           '■ │ ─ │ ─ │ ─ │ ─ │ ─ │ ─ │ ■',
@@ -1551,6 +3010,819 @@ funcion del dano de tu arma.''',
                         ),
                       ),
                       new Text(''),
+                      new Container(
+                        child: Text(
+                          '''
+Los guerreros de armas son una clase increiblemente
+Si bien los guerreros de armas son conocidos como 
+dioses JcJ, el guerrero de proteccion no suele estar 
+entre ellos. Un guerrero protewccion tiene dos campos
+de batalla, donde sobresalen en dos posiciones unicas.
+
+Como son tanques, sobresalen en el lado PVE del 
+Valle de Alterac como tanque, Son capaces de liderar 
+la carga y amenazar a los comandantes enemigos asi 
+como a los jefes finales del BG. Como son tanques, 
+tambien son excelentes portadores en Garganta Grito
+de Guerra.
+
+Los guerreros de proteccion son casi inmunes al dano 
+fisico de los picaros e incluso pueden ignorar el dano
+que un guerrero de armas de rango 14 completo puede 
+infligirles con una pequena cantidad de ayuda.
+''',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 17,
+                            color: Colors.black,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      //Contenido total
+                      new Container(
+                        child: Text(
+                          'Rama de talentos',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 24,
+                            color: Colors.black,
+                            shadows: [
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, -2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, -2),
+                              )
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Image(
+                          image:
+                              AssetImage('assets/images/classic/pvp/gtank.png'),
+                          height: 225,
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Text(
+                          'Estadisticas para el PvP',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 24,
+                            color: Colors.black,
+                            shadows: [
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, -2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, -2),
+                              )
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Text(
+                          '''
+Cuando se trata de PvP, hay algunas diferencias
+El enfoque principal aqui es la evitacion y, como
+regla general, su equipo de evitacion general que
+usa para tanquear es, honestamente, la mejor
+manera de hacerlo.
+
+Aguante
+
+Más salud es mas supervivencia.
+
+Evitaciones generales
+
+Sus evitaciones generales son excelentes para este
+papel particular de portar la bandera. Esto ayuda 
+a reducir el dano de guerreros y picaros, reduce 
+la ingesta de dano de cazadores y te ayuda a evitar
+otras habilidades en general. Estos vienen en tu 
+conjunto de tanque general
+
+Todo lo demas
+
+Tu dano no es importante y realmente no quieres 
+ninguna resistencia bruta, asi que usa tu equipo 
+de evitacion.
+''',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 17,
+                            color: Colors.black,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      //////////////////equipamiento
+                      new Container(
+                        child: Text(
+                          'Equipamiento PvP',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 24,
+                            color: Colors.black,
+                            shadows: [
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, -2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, -2),
+                              )
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: RichText(
+                          textAlign: TextAlign.center,
+                          text: TextSpan(
+                            style: TextStyle(
+                              fontFamily: 'warcraft',
+                              fontSize: 17,
+                              color: Colors.black,
+                            ),
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: '''
+Debido a que el trabajo principal de Protection 
+Warriors en PvP es acosar al enemigo y completar 
+los objetivos del campo de batalla, gran parte 
+de su equipamiento en PvP es similar al de PvE, 
+aunque se pueden hacer cambios para aumentar 
+su produccion de dano moderado.
+
+Echa un vistazo a nuestras guias de equipamiento 
+de JcJ clasico para comprender mejor como equipar 
+a tu guerrero para JcJ clasico de WoW.
+''',
+                              ),
+                              
+                            ],
+                          ),
+                        ),
+                      ),
+                      ///////////////habilidades
+                      ///
+                      new Container(
+                        child: Text(
+                          'Habilidades PvP',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 24,
+                            color: Colors.black,
+                            shadows: [
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, -2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, -2),
+                              )
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      new Text(''),
+                      ///////////Habilidades ofensivas
+                      new Container(
+                        child: Text(
+                          'Habilidades Ofensivas',
+                          style: TextStyle(
+                            fontFamily: 'warcraft',
+                            fontSize: 24,
+                            color: Colors.black,
+                            shadows: [
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, 2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(2, -2),
+                              ),
+                              Shadow(
+                                color: Colors.white,
+                                offset: Offset(-2, -2),
+                              )
+                            ],
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      ///////Habilidades ofensivas
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            /*new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_rogue_ambush.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),*/
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.center,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text:
+'''Como Guerrero de proteccion en JcJ, tu dano es bastante insignificante 
+en la mayoria de las situaciones, y estas alli para Tank Vanndar Pico 
+Tormenta o Drek'Thar en el Valle de Alterac, o para caminar lentamente 
+por la bandera en el medio. 
+
+La mayoria de las cosas relacionadas con su trabajo en AV se pueden 
+discutir en una guia de rotacion de PVE, hay algunas cosas a tener en 
+cuenta en las discusiones generales de PVP / Warsong Gulch. 
+
+Tu objetivo es ser un disruptor de la lucha y asegurarte de que puedas
+moverte con tu equipo y vivir. Tenga en cuenta que aun debe usar sus 
+otras habilidades como Bloquear con escudo, Embate con escudo, Abrumar
+y varias otras habilidades si tiene la rabia.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_charge.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Cargar: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Te pone encima de alguien, genera rabia y aturde
+al objetivo. Este es el primer boton que usa, si es posible,
+incluso si es para la generacion de rabia''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_rogue_sprint.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Interceptar: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Como  carga  pero  utilizable  en  combate  y 
+cuesta rabia. Una habilidad de movilidad clave en su kit
+de herramientas y siempre debe estar en una buena 
+combinación de teclas.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_shockwave.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Seccionar: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ''' Su  boton  central,  probablemente  estara   
+machacando  mientras  corre  con  la  bandera. Debes 
+asegurarte  de  que  todos  tengan  esto  para  poder 
+intentar escapar''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/spell_nature_ancestralguardian.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Ira rabiosa: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Rompe los miedos te mantiene inmune a ellos
+Genial contra brujos y otros guerreros. Tambien se 
+puede usar para aumentar realmente la generacion 
+de ira cuando te golpean.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_golemthunderclap.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Grito intimidador: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Miedo. Genial para quitarle objetivos
+a tus curanderos y a distancia, asi como para quitarle
+una  mafia si te aplastan. Una gran combinacion para 
+esto es temer y luego Free Action Potion para dar un 
+gran salto por delante de los demas''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathscream.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Aullido perforador: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Si  bien  esto  es  un  talento,  es  un
+aturdimiento de AOE que se puede enviar spam. Si tienes
+este talento, definitivamente querras machacarlo.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_warrior_warcry.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Grito desmoralizador: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Reduce poder de ataque, tambien  
+se puede usar para sacar a los picaros del sigilo. Muy 
+util para asegurarse de que no se agote o para evitar 
+que salga un contraataque''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+                      new Container(
+                        child: Row(
+                          children: [
+                            new Image(
+                              image: NetworkImage(
+                                  'https://wow.zamimg.com/images/wow/icons/large/ability_rogue_slicedice.jpg'),
+                              width: 50,
+                            ),
+                            new Text('   '),
+                            new Column(
+                              children: [
+                                new Container(
+                                  child: RichText(
+                                    textAlign: TextAlign.justify,
+                                    text: TextSpan(
+                                      style: TextStyle(
+                                        fontFamily: 'warcraft',
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                      ),
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: '''
+Golpes de barrido: ''',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            shadows: [
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, 1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(1, -1),
+                                              ),
+                                              Shadow(
+                                                color: Colors.white,
+                                                offset: Offset(-1, -1),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              '''Desde el quinto nivel en el arbol de  
+talentos de Armas, esta habilidad hace que tus proximos
+ataques golpeen a un enemigo adicional.''',
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      new Text(''),
+
+
+
+
+
+                      ///Fin de Contenido en pagina
                       new Container(
                         child: Text(
                           '■ │ ─ │ ─ │ ─ │ ─ │ ─ │ ─ │ ■',
